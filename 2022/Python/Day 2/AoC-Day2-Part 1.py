@@ -2,14 +2,6 @@ def D2P1(Input):
     input_file = open(Input,"r")
     InputList = input_file.read().splitlines()
 
-    score = {
-      'A':1,
-      'B':2,
-      'C':3,
-      'X':1,
-      'Y':2,
-      'Z':3
-    }
       # Rock A 1 vs Paper Y 2     P2 Win Diff:-1
       # Rock A 1 vs Scissor Z 3   P1 Win Diff:-2
 
@@ -18,6 +10,14 @@ def D2P1(Input):
 
       #Paper B 2 vs Rock X 1      P1 Win Diff:1
       #Paper B 2 vs Scissor Z 3   P2 Win Diff:-1
+    score = {
+      'A':1,
+      'B':2,
+      'C':3,
+      'X':1,
+      'Y':2,
+      'Z':3
+    }
 
     total_score = 0
     for line in InputList:
