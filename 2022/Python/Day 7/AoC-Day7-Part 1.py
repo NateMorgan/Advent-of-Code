@@ -1,5 +1,3 @@
-import time
-
 def D7P1(input):
   file = open(input,'r')
   file_list = file.read().splitlines()
